@@ -15,16 +15,13 @@ char *ft_strdup(const char *s);
 char *ft_substr(char const *s, unsigned int start, size_t len);
 char *ft_strjoin(char const *s1, char const *s2);
 int ft_split(char const *s, char c);
+char *ft_itoa(int n);
 
 
 int main()
 {
-  char source[] = "00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15";
-  char ok = 32;
-  
-  //char **str;
-  
-  ft_split(source, ok);
-
-  //printf("%s", str[0]);
+  char *str;
+  str = ft_itoa(2147483647);
+  printf(str);
+  free(str);
 }
