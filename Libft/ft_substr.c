@@ -1,5 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
 int ft_strlen(char *str);
 
@@ -23,5 +22,3 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     substr[i] = '\0';
     return(substr);
 }
-
-// pt que la 12 est innutile puisque lorsque tu met un '\0' sa anule anyways . . .

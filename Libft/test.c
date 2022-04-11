@@ -1,21 +1,18 @@
 #include <stdio.h>
+ #include <stdlib.h>
 
-void change(int *i)
-{
-    *i = 42;
-
-
-}
 
 int main()
 {
-    int i;
+    int po[] = {1, 2 ,3, 4};
 
-    i = 0;
+    int *p = po;
 
-    change(&i);
-   printf("%d", i);
+    printf("%d \n", p++);
+    printf("%d \n", *p);
+    printf("%d \n", p[0]);
 
+  
 
 
 }
